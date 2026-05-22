@@ -1,4 +1,4 @@
-const API ="http://127.0.0.1:8000"
+const API ="https://event-manager-awgb.onrender.com"
 async function signup(){
     const username = document.getElementById("username").value
     const password = document.getElementById("password").value
