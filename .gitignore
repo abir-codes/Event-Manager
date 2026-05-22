@@ -2,3 +2,7 @@
 __pycache__/
 .env
 .idea/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
