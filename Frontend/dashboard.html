@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <h1>My Events</h1>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <div class="form-box">
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="category" placeholder="Category">
+        <input type="date" id="due_date">
+        <select id ="priority">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+        <select id="status">
+            <option>Pending</option>
+            <option>Completed</option>
+        </select>
+        <textarea id="notes" placeholder="Notes"></textarea>
+        <button class="add-btn" onclick="addEvent()">Add Event</button>
+    </div>
+    <input type="text" id="search" placeholder="Search events..." onkeyup="searchEvents()">
+    <div id="events"></div>
+    <script src="dashboard.js"></script>  
+</body>
+</html>
