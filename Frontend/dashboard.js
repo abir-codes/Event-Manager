@@ -1,7 +1,7 @@
 const API = "http://127.0.0.1:8000"
 const token = localStorage.getItem("token");
 if(!token){
-    window.location.href= "auth.html"
+    window.location.href= "index.html"
 } 
 function getToken() {
     return localStorage.getItem("token");
