@@ -184,7 +184,7 @@ function toggleNotes(id){
 
 function logout(){
     localStorage.removeItem("token")
-    window.location.href = "/auth.html"
+    window.location.href = "/index.html"
 }
 
 window.onload = loadEvents
